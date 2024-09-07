@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px; 
+  
+  }
+  
+  .pokemon-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .pokemon-card {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+.pokemon-card:hover {
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+     transform: translateY(-5px);
+     }
+
+     .pokemon-card.active {
+      border: 2px solid blue; /* Destaque quando clicado */
+      transform: scale(1.05);
+    }
+    
+    /* Ocultar o modal por padrão */
+     .modal {
+     display: none;
+     /* ... outros estilos do modal ... */
+    }
+    .pokemon-card {
+        /* ... */
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .pokemon-card.active {
+        transform: scale(1.1);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        border: 2px solid gold; /* Cor dourada para destacar */
+        z-index: 1; /* Garante que o card ativo fique por cima dos outros */
+      }
+      
+      .pokemon-card.dark {
+        opacity: 0.7;
+        filter: grayscale(1);
+      }
+
+      
+     body {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/691/305/186/pokemon-pokeball-wallpaper-preview.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     }
+    
+     footer {
+      margin: auto;
+     text-align: center; /* Centraliza o conteúdo dentro do footer */
+    }   
+  
+
+    .success-message {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 
+       0 2px 5px rgba(0, 0, 0, 0.3);  
+      
+        text-align: center;
+      }
