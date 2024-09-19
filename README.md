@@ -15,8 +15,5 @@ Abra o arquivo index.html em seu navegador web.
 Contribuindo
 Sinta-se à vontade para contribuir com este projeto! Abra um pull request com suas melhorias.
 
-Licença
-MIT
-
 Autor
 Gabriel Molina
